@@ -1,2 +1,26 @@
 # 100JUN-2753
 STUDY
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	int year;
+
+	printf("연도:");
+	scanf("%d", &year);
+
+	if ((year % 4 == 0) && (year % 100 != 0)||(year%400==0)) 
+	{
+		printf("1");
+	}
+
+	else 
+	{
+		printf("0");
+	}
+
+	return 0;
+
+}
+
